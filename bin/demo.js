@@ -242,7 +242,7 @@
         }, a;
     }(), v = n.prototype, v.y = function(a, t, e) {
         var n, r = this;
-        r.x++, n = new XMLHttpRequest(), n.responseType = t, n.open("POST", a, !0), n.onload = function() {
+        r.x++, n = new XMLHttpRequest(), n.responseType = t, n.open("GET", a, !0), n.onload = function() {
             e(n.response, n.responseUrl, n.responseType), ++r.w == r.x && r.B();
         }, n.send();
     }, v.C = function(a, t) {
